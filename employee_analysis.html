@@ -1,10 +1,288 @@
 
-<html>
-<head><title>Employee Department Analysis</title></head>
-<body>
-<h2>Employee Data Department Distribution</h2>
-<p><b>Email for verification:</b> 24f1001723@ds.study.iitm.ac.in</p>
-<p><b>Frequency of Operations Department:</b> 3</p>
-<img src="department_distribution.png" alt="Department Histogram">
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Department Analysis Report</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                border-bottom: 3px solid #3498db;
+                padding-bottom: 10px;
+            }
+            h2 {
+                color: #34495e;
+                margin-top: 30px;
+            }
+            .highlight {
+                background-color: #ecf0f1;
+                padding: 15px;
+                border-radius: 5px;
+                border-left: 4px solid #3498db;
+                margin: 20px 0;
+            }
+            .email-verification {
+                background-color: #e8f5e8;
+                border: 1px solid #27ae60;
+                padding: 10px;
+                border-radius: 5px;
+                margin: 20px 0;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: left;
+            }
+            th {
+                background-color: #3498db;
+                color: white;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .visualization {
+                text-align: center;
+                margin: 30px 0;
+            }
+            .visualization img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+            .footer {
+                text-align: center;
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 1px solid #ddd;
+                color: #7f8c8d;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📊 Employee Department Analysis Report</h1>
+            
+            <div class="email-verification">
+                <strong>🔐 Email for Verification:</strong> 24f1001723@ds.study.iitm.ac.in
+            </div>
+            
+            <div class="highlight">
+                <h2>🎯 Key Findings</h2>
+                <p><strong>Total Employees:</strong> 35</p>
+                <p><strong>Operations Department Frequency:</strong> 13 employees</p>
+                <p><strong>Operations Department Percentage:</strong> 37.1%</p>
+            </div>
+            
+            <h2>📈 Department Distribution</h2>
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th>Number of Employees</th>
+                    <th>Percentage</th>
+                </tr>
+    
+                <tr>
+                    <td>Operations</td>
+                    <td>13</td>
+                    <td>37.1%</td>
+                </tr>
+        
+                <tr>
+                    <td>IT</td>
+                    <td>6</td>
+                    <td>17.1%</td>
+                </tr>
+        
+                <tr>
+                    <td>HR</td>
+                    <td>5</td>
+                    <td>14.3%</td>
+                </tr>
+        
+                <tr>
+                    <td>Finance</td>
+                    <td>4</td>
+                    <td>11.4%</td>
+                </tr>
+        
+                <tr>
+                    <td>Sales</td>
+                    <td>4</td>
+                    <td>11.4%</td>
+                </tr>
+        
+                <tr>
+                    <td>Marketing</td>
+                    <td>3</td>
+                    <td>8.6%</td>
+                </tr>
+        
+            </table>
+            
+            <h2>💰 Average Salary by Department</h2>
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th>Average Salary ($)</th>
+                </tr>
+    
+                <tr>
+                    <td>Finance</td>
+                    <td>$65,406.25</td>
+                </tr>
+        
+                <tr>
+                    <td>HR</td>
+                    <td>$85,021.60</td>
+                </tr>
+        
+                <tr>
+                    <td>IT</td>
+                    <td>$109,381.50</td>
+                </tr>
+        
+                <tr>
+                    <td>Marketing</td>
+                    <td>$63,048.00</td>
+                </tr>
+        
+                <tr>
+                    <td>Operations</td>
+                    <td>$68,853.38</td>
+                </tr>
+        
+                <tr>
+                    <td>Sales</td>
+                    <td>$90,833.50</td>
+                </tr>
+        
+            </table>
+            
+            <div class="visualization">
+                <h2>📊 Department Distribution Visualizations</h2>
+                <img src="department_distribution.png" alt="Department Distribution Charts">
+            </div>
+            
+            <h2>📋 Raw Data Sample</h2>
+            <table>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary ($)</th>
+                    <th>Years Experience</th>
+                </tr>
+    
+                <tr>
+                    <td>1</td>
+                    <td>Employee_1</td>
+                    <td>Operations</td>
+                    <td>$45,795.00</td>
+                    <td>4</td>
+                </tr>
+        
+                <tr>
+                    <td>2</td>
+                    <td>Employee_2</td>
+                    <td>HR</td>
+                    <td>$30,860.00</td>
+                    <td>9</td>
+                </tr>
+        
+                <tr>
+                    <td>3</td>
+                    <td>Employee_3</td>
+                    <td>IT</td>
+                    <td>$106,820.00</td>
+                    <td>3</td>
+                </tr>
+        
+                <tr>
+                    <td>4</td>
+                    <td>Employee_4</td>
+                    <td>Finance</td>
+                    <td>$84,886.00</td>
+                    <td>5</td>
+                </tr>
+        
+                <tr>
+                    <td>5</td>
+                    <td>Employee_5</td>
+                    <td>Marketing</td>
+                    <td>$36,265.00</td>
+                    <td>3</td>
+                </tr>
+        
+                <tr>
+                    <td>6</td>
+                    <td>Employee_6</td>
+                    <td>Sales</td>
+                    <td>$112,386.00</td>
+                    <td>7</td>
+                </tr>
+        
+                <tr>
+                    <td>7</td>
+                    <td>Employee_7</td>
+                    <td>Operations</td>
+                    <td>$67,194.00</td>
+                    <td>5</td>
+                </tr>
+        
+                <tr>
+                    <td>8</td>
+                    <td>Employee_8</td>
+                    <td>IT</td>
+                    <td>$117,498.00</td>
+                    <td>9</td>
+                </tr>
+        
+                <tr>
+                    <td>9</td>
+                    <td>Employee_9</td>
+                    <td>Operations</td>
+                    <td>$74,131.00</td>
+                    <td>7</td>
+                </tr>
+        
+                <tr>
+                    <td>10</td>
+                    <td>Employee_10</td>
+                    <td>HR</td>
+                    <td>$90,263.00</td>
+                    <td>2</td>
+                </tr>
+        
+            </table>
+            
+            <div class="footer">
+                <p><strong>Report Generated:</strong> 2025-08-20 23:56:57</p>
+                <p>This analysis was performed using Python with pandas, matplotlib, and seaborn.</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
